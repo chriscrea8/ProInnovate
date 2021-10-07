@@ -18,7 +18,7 @@ a {
 }
 
 header .logo {
-    width: 30px;
+    width: 200px;
 }
 
 header span {
@@ -99,9 +99,40 @@ input::placeholder {
 
 .content p:last-of-type {
     color: #0066cc;
+    text-align: center;
 }
 
 .content .sign_in {
     font-weight: 700;
     color: #0066cc;
+}
+
+.bg_rect {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.bg_rocket {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    margin-left: 50px;
+    z-index: -1;
+}
+
+.circles_bg {
+    position: absolute;
+    right: 0;
+}
+
+.bg_circles {
+    position: absolute; 
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100px;
+    opacity: 50%;
 }
