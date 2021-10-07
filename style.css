@@ -9,7 +9,7 @@ body {
     font-family: "Proxima Nova", Helvetica, sans-serif;
     font-size: 14px;
     padding: 3rem 5rem;
-    max-width: 1140px;
+    max-width: 900px;
     margin: auto;
     overflow-x:hidden;
 }
@@ -53,12 +53,12 @@ header .nav-links a{
 }
 
 h2 {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
 .content p {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 40px;
 }
 
@@ -114,6 +114,8 @@ input::placeholder {
     top: 0;
     right: 0;
     z-index: -1;
+    margin-top: -20%;
+    margin-right: 5%;
 }
 
 .bg_rocket {
@@ -157,6 +159,13 @@ input::placeholder {
     background-color: #0967D2;
 }
 
+@media screen and (max-width: 1750px) {
+    .bg_rect {
+        margin-top: -10%;
+        margin-right: 5%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     input {
         margin-top: 5px;
@@ -171,6 +180,11 @@ input::placeholder {
     .content {
         margin-top: 25px;
         padding: 40px 20px;
+    }
+
+    .bg_rect {        
+        margin-top: 0;
+        margin-right: 0;
     }
   }
 
