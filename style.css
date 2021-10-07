@@ -120,7 +120,7 @@ input::placeholder {
     position: absolute;
     top: 60%;
     left: 0;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .circles_bg {
@@ -132,9 +132,29 @@ input::placeholder {
     position: absolute; 
     bottom: 0;
     right: 0;
-    z-index: -1;
+    /* z-index: -1; */
     width: 100px;
     opacity: 50%;
+}
+
+.page_dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    margin: auto;
+}
+
+.page_dots .dot {
+    background-color: #DDE2E5;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.page_dots .dot.active {
+    background-color: #0967D2;
 }
 
 @media screen and (max-width: 1024px) {
@@ -156,22 +176,59 @@ input::placeholder {
 
   @media screen and (max-width: 768px) {
     body {
-        padding: 2rem 2rem;
-
-    }
-
-    input {
-        margin-top: 5px;
-        padding: 13px;
-        width: 100%;
+        padding: 2rem 1.5rem;
     }
 
     .form-group {
         margin-bottom: 20px;
     }
 
-    .content {
-        margin-top: 25px;
-        padding: 40px 20px;
+    input {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+
+  }
+
+  @media screen and (max-width: 425px) {
+    header .logo {
+        width: 150px;
+    }
+
+    header .nav-links a{
+        font-size: 12px;
+    }
+
+    .bg_rocket {
+        width: 20%;
+        position: absolute;
+        top: 60%;
+        left: 0;
+        /* z-index: -1; */
+        pointer-events: none;
+        opacity: 0.5;
+    }
+    
+    .circles_bg {
+        position: absolute;
+        right: 0;
+        pointer-events: none;
+    }
+    
+    .bg_circles {
+        position: absolute; 
+        bottom: 0;
+        right: 0;
+        /* z-index: -1; */
+        width: 70px;
+        opacity: 50%;
+        pointer-events: none;
     }
   }
+
+  
+  
